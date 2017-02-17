@@ -1,0 +1,6 @@
+---
+users:
+  - { username: 'user1', password: '$6$hhZHR5FoMDusfSjl$BYOqRPafWgQ1lTJe/mAoxuys7ItQwSGo1ZrZ4vE8OkSQuHbbOWDQ.T72qDnJRbi5L0dzWHY8TAKJ4wNf90wLX.', comment: 'comment1', shell: '/bin/bash', home: '/home/user1', expires: '1422403387' }
+  - { username: 'user2', password: '$6$hhZHR5FoMDusfSjl$BYOqRPafWgQ1lTJe/mAoxuys7ItQwSGo1ZrZ4vE8OkSQuHbbOWDQ.T72qDnJRbi5L0dzWHY8TAKJ4wNf90wLX.', comment: 'comment2', shell: 'nologin', home: '/home/user2', expires: '1422403387' }
+  - { username: 'user3', password: '$6$hhZHR5FoMDusfSjl$BYOqRPafWgQ1lTJe/mAoxuys7ItQwSGo1ZrZ4vE8OkSQuHbbOWDQ.T72qDnJRbi5L0dzWHY8TAKJ4wNf90wLX.', comment: 'comment3', shell: 'false', home: '/home/user3', expires: '1422403387' }  
+command: chage -d 0

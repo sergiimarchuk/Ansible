@@ -1,0 +1,9 @@
+---
+- name: add user
+  user: name="{{user}}"
+        state=present
+        password="{{password}}"
+        shell=/bin/bash
+        append=yes
+        comment="test User"
+

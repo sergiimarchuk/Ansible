@@ -1,0 +1,11 @@
+---
+- name: Ensure user add
+  with_items: users
+  user: name="{{ item.username }}"
+        state=present
+        password="{{ item.password }}"
+        shell=/bin/bash
+        append=yes
+        comment="{{ item.comment }}"
+        home="{{ item.home }}"
+- include: command.yml
