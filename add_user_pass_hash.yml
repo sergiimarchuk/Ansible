@@ -1,5 +1,5 @@
 ---
-- hosts: webservers
+- hosts: list_of_servers
   sudo: yes
   gather_facts: no
   roles: 
