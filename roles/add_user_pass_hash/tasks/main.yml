@@ -1,11 +1,20 @@
 ---
-- name: Ensure user add
-  with_items: users
-  user: name="{{ item.username }}"
-        state=present
-        password="{{ item.password }}"
-        shell=/bin/bash
-        append=yes
-        comment="{{ item.comment }}"
-        home="{{ item.home }}"
-- include: command.yml
+  - name: Ensure user add
+    with_items: "{{ users }}"
+    user: 
+        name: "{{ item.username }}"
+        state: present
+        password:  "{{ item.password }}"
+        shell: /bin/bash
+        append: yes
+        comment:  "{{ item.comment }}"
+        home:  "{{ item.home }}"
+        groups: "{{ item.groups }}"
+  - include: command.yml
+  - include: command_template.yml
+  - template:
+      src: hosts.j2
+      dest: /etc/hosts2
+      owner: root
+      group: wheel
+      mode: 0644

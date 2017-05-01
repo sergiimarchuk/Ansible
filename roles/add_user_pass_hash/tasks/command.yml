@@ -1,4 +1,4 @@
 ---
 - name: Force pppassword 
-  with_items: users  
+  with_items: "{{ users }}"  
   command: chage -d 0 "{{ item.username }}" 

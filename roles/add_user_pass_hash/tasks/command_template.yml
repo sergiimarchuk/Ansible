@@ -1,0 +1,3 @@
+---
+- name: Put files 
+  template: src=/etc/hosts dest={{ conf_path }}/hosts_ubuntu 

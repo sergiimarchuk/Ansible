@@ -1,0 +1,6 @@
+---
+- name: Update or Intstall Kernel
+  with_items: command:
+       command: "{{ item.command1 }}"
+       command: "{{ item.command2 }}"
+

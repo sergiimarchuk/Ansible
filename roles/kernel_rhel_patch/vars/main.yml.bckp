@@ -1,0 +1,5 @@
+---
+
+
+command1: yum clean all
+command2: yum -y install kernel kernel-devel kernel-headers
