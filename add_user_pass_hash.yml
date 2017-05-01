@@ -1,6 +1,5 @@
 ---
-- hosts: list_of_servers
-  sudo: yes
-  gather_facts: no
+- hosts: webservers
+  #gather_facts: no
   roles: 
   - add_user_pass_hash 

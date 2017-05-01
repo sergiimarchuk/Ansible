@@ -3,4 +3,4 @@
   sudo: yes
   gather_facts: no
   roles: 
-  - dbserver
+  - kernel_rhel_patch 
