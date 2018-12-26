@@ -125,6 +125,3 @@ def checklog_file():
 	with open (checklog_file_, 'a') as f: f.write (str(dict_user) + '\n')
 
 checklog_file()
-#        - user: name='to905294' comment='SD4557078 mainak.roy@accenture.com' home='/home/to905294' shell='/bin/bash' password='$6$random_salt$wX/PdsAwauYc5QBdGTmwQ/sebVnIwjEcc5oMHJhGMbVxn/KiUshKOndN35ANNLN2RF1Bg33oygajxEgmrKo0k/'
-#        - user: name='to905294' comment='SD4557078 mainak.roy@accenture.com' home='/home/to905294' shell='/bin/bash' group='to905294'
-
